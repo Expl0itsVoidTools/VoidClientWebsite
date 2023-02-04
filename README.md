@@ -1,2 +1,2 @@
 # VoidClientWebsite
-Webiste for VoidClient
+Website for VoidClient
