@@ -15,6 +15,25 @@
     transform: translateX(-50%) translateZ(0) scaleY(1);
   }
 }
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes grow_title {
+    0% {
+        font-size: 12px;
+    }
+    50% {
+        font-size: 120px;
+    }
+    100% {
+        font-size: 160px;
+    }
+}
 .waveWrapper {
   overflow: hidden;
   position: relative;
@@ -93,11 +112,36 @@
 }
 .waveTitleMain {
     font-size: 160px;
+    animation: grow_title 3s infinite;
 }
 .waveTitleDesc {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Pacifico', cursive;
+    color: white;
+    animation: show 3s;
 }
 .waveTitleBtn {
     font-family: 'Itim', cursive;
+    transition: 1s;
+}
+.menu {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    opacity: 1;
+    z-index: 21;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-property: all;
+}
+
+a.menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+a.menu-link:hover {
+    text-decoration: underline;
 }
