@@ -112,7 +112,7 @@
 }
 .waveTitleMain {
     font-size: 160px;
-    animation: grow_title 3s infinite;
+    animation: grow_title 5s infinite;
 }
 .waveTitleDesc {
     font-size: 30px;
